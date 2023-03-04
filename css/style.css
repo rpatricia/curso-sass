@@ -1,9 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,200;1,600&family=Poppins:ital,wght@0,400;0,900;1,500&display=swap');
+/* Error: expected newline.
+ *   ,
+ * 4 |     color: variables: .$secondary-color
+ *   |                     ^
+ *   '
+ *   sass\styles.sass 4:21  root stylesheet */
 
-
-div {
-  background: red;
-  font-family: 'Josefin Sans';
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: expected newline.\a   \2577 \a 4 \2502      color: variables: .$secondary-color\d\a   \2502                      ^\a   \2575 \a   sass\\styles.sass 4:21  root stylesheet";
 }
-
-/*# sourceMappingURL=style.css.map */
